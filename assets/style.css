@@ -1,0 +1,183 @@
+*{}
+
+#design-container .ctai-cart {
+	position: fixed;
+    bottom: 35px;
+    left: 23%;
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+}
+
+#design-container .fn-pr {
+	display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #cccccc6e;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+#design-container .fn-pr > span {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#design-container .ct-adcart > span {
+	background: red;
+    color: #fff;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#design-container .ct-adcart > span:hover {
+	opacity: .9;
+}
+
+#design-container .stitlr h1.product_title,
+#design-container .stitlr span.woocommerce-Price-amount
+{
+	font-size: 14px !important;
+    font-weight: bold;
+}
+
+
+/*------------*/
+
+
+#myModal{
+   background: rgba(0,0,0,0.5);
+   display: block;
+   visibility: hidden; 
+   transition: .4s;
+}
+
+.in {
+   visibility: visible !important;
+}
+
+.fade.in{
+   opacity: 1;
+   transition: visibility .5s, opacity .5s linear;
+}
+
+.fade.in .modal-content {
+   top: 180px;
+}
+
+.modal-content {
+  width: 700px;
+  left: 0%;
+  top: -180px;
+  position: fixed;
+  transition: all .4s;
+}
+
+.popup-top {
+    text-align: center;
+}
+
+.item-model {
+    margin-bottom: 10px;
+}
+
+.item-model span {
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+#myModal .ct-total {
+    padding: 30px;
+}
+
+#myModal .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#myModal .infos > span {
+    font-size: 16px;
+}
+
+#myModal .ct-total_process {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.checkCf {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkCf > input {
+    margin: 0;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.checkCf > label {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+
+#myModal button.ct-process {
+    background-color: #2273a4;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#myModal button:hover {
+    background-color: #4b6c96cf;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ct-process.no-click {
+    opacity: .5;
+    pointer-events: none;
+}
+
+#myModal .tren.an,
+#myModal .duoi
+{
+    display: none;
+}
+
+#myModal .duoi.hien {
+    display: block;
+}
+
+.modal-content.duoi .infos {
+    text-align: center;
+}
+
+.ct-process a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ct-total_process.duoi {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*/////////////////////////////////////////*/
+
+@media screen and (max-width: 767px) {
+    #myModal .modal-content {
+        width: 100%;
+    }
+}
